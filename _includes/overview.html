@@ -1,0 +1,23 @@
+{% assign overview = site.data.data.overview %}
+
+{% if overview %}
+<section class="section overview-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+    </span>
+    Overview
+  </h2>
+
+  <div class="summary">
+    <ul>
+      {% for text in overview %}
+        <li>{{ text }}</li>
+      {% endfor %}
+    </ul>
+  </div><!--//summary-->
+    
+</section><!--//section-->
+{% endif %}

@@ -29,6 +29,15 @@
     </div><!--//details-->
     {% endif %}
 
+    {% if experience.details %}
+    <div class="technologies">
+      <b>Technologies:</b>
+      {% for tech in experience.techs %}
+        <span>{{ tech }} </span>
+      {% endfor %}
+    </div><!--//technologies-->
+    {% endif %}
+
   </div><!--//item-->
   {% endfor %}
 

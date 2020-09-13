@@ -1,0 +1,19 @@
+.technologies {
+  b {
+    color: $text-color;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  span {
+    display: inline-block;
+    padding: 0 6px;
+    background-color: $theme-color;
+    //background-color: darken($theme-color, 15%);;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+  }
+}
